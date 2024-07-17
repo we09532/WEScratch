@@ -17,7 +17,7 @@ class Scratch3YourExtension {
             id: 'yourScratchExtension',
 
             // name that will be displayed in the Scratch UI
-            name: 'Demo',
+            name: 'we09532 Test',
 
             // colours to use for your extension blocks
             color1: '#000099',
@@ -31,14 +31,14 @@ class Scratch3YourExtension {
             blocks: [
                 {
                     // name of the function where your block code lives
-                    opcode: 'myFirstBlock',
+                    opcode: 'Iswe09532Test?',
 
                     // type of block - choose from:
                     //   BlockType.REPORTER - returns a value, like "direction"
                     //   BlockType.BOOLEAN - same as REPORTER but returns a true/false value
                     //   BlockType.COMMAND - a normal command block, like "move {} steps"
                     //   BlockType.HAT - starts a stack if its value changes from false to true ("edge triggered")
-                    blockType: BlockType.REPORTER,
+                    blockType: BlockType.Boolean,
 
                     // label to display on the block
                     text: 'My first block [MY_NUMBER] and [MY_STRING]',
@@ -93,7 +93,8 @@ class Scratch3YourExtension {
      */
     myFirstBlock ({ MY_NUMBER, MY_STRING }) {
         // example implementation to return a string
-        return MY_STRING + ' : doubled would be ' + (MY_NUMBER * 2);
+        return 'True';
+        // MY_STRING + ' : doubled would be ' + (MY_NUMBER * 2);
     }
 }
 
